@@ -1,0 +1,1 @@
+Get-ChildItem -Path "C:\Ruta\A\Tu\Carpeta\PDF" -Filter *.pdf | Sort-Object Name | ForEach-Object { Start-Process -FilePath $_.FullName -Verb Print }
